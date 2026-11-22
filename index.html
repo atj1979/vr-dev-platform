@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>VR Dev Platform</title>
+    <link rel="icon" href="favicon.svg" />
+  </head>
+  <body>
+    <div id="hud">
+      <strong>VR Dev Platform</strong>
+      <span class="hint">Left click presses. Right-drag looks. WASD walks when nothing is focused. Esc releases focus. Ctrl+Enter runs, Ctrl+S saves.</span>
+      <button id="home-btn" type="button">Reset view</button>
+      <button id="import-btn" type="button">Import</button>
+    </div>
+    <div id="app"></div>
+    <textarea id="editor-sink" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Editor input"></textarea>
+    <input id="file-input" type="file" accept=".json,.js,.vrproj.json,application/json,text/javascript" />
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
